@@ -1,0 +1,62 @@
+body {
+    background-color: $secondary-color;
+    color: $black-color;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0 4rem;
+    margin-top: 8rem;
+}
+
+footer label {
+    font-weight: $weight-500;
+    font-size: 1.4rem;
+}
+
+p {
+    font-weight: $weight-400;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:focus {
+    outline-color: $primary-color;
+}
+
+.subtitle {
+    font-weight: $weight-700;
+    font-size: 1.4rem;
+    padding-bottom: $small-spacing;
+}
+
+.content-grey {    
+    padding-bottom: 1.9rem;
+    color: $grey-dark-color;
+}
+
+.skip {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    padding: $extra-small-spacing;
+    @include border-radius;
+    background-color: $primary-color;
+    color: $secondary-color;
+    @include box-shadow;
+
+    &:focus {
+        left: 0;
+        top: 5.2rem;
+        width: auto;
+        height: auto;
+        z-index: 1000;
+    }
+}

@@ -1,0 +1,104 @@
+<footer>
+
+    <section class="footer-top max-width">
+
+        <div class="footer-top__social">
+            
+            <h3>
+                Follow us!
+            </h3>
+
+            <ul>
+
+                {% for social in socialPlatform %}
+                    
+                    <li>
+
+                        <a href="">
+
+                            <img src="{{ social.logo }}">
+
+                        </a>
+                        
+
+                    </li>
+
+                {% endfor %}
+
+            </ul>
+
+        </div>
+
+        <div class="footer-top__help">
+
+            <h3>
+                Need help? Call <a href="0123456789">0123456789</a>
+            </h3>
+
+            <p>
+                Our customer service is available 24/7
+            </p>
+
+        </div>
+
+        <div class="footer-top__news-letter">
+
+            <form class="footer-top__form">
+
+                <label for="sign-up--form">
+                    Sign up for our newsletter
+                </label>
+
+                <div class="footer-top__form__container">
+
+                    <input class="input--alt" type="email" name="sign-up" id="sign-up--form" placeholder="john_doe@gmail.com" required>
+
+                    <button class="btn--sec">
+
+                        <span class="btn--front--sec">
+                            Sign up
+                        </span>
+
+                    </button>
+
+                </div>
+
+                
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <section class="footer-bottom">
+
+        <div class="max-width footer-bottom__container">
+
+            <div class="footer-bottom__logo">
+
+                <a href="/">
+                
+                    <img src="/assets/images/logo-blue.png" alt="Logo Walk-A-Wish" class="footer__logo logo--small">
+                
+                </a>
+
+            </div>
+
+            <div class="footer-bottom__legal">
+                
+                <p class="footer-bottom__legal__text">© {{ helpers.currentYear() }} Jan Deschacht</p>
+
+                <a href="" class="footer-bottom__legal__text">Privacy policy</a>
+
+                <a href="" class="footer-bottom__legal__text">cookie policy</a>
+
+                <a href="" class="footer-bottom__legal__text">All rights reserved</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</footer>

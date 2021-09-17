@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+<section class="info hero max-width margin-bottom-3">
+
+    <div class="info__img hero__img">
+
+        {% if img %}
+
+            <img src="../assets/images/{{ img }}" alt="{{ title }} banner">
+            
+        {% endif %}
+   
+    </div>
+
+    <div class="info__content hero__text">
+
+        <h1>
+            {{ title }} us
+        </h1>
+
+        {{ content | safe }}
+
+    </div>
+
+</section>

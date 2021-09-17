@@ -1,0 +1,155 @@
+---
+layout: base
+title: Home
+eleventyNavigation: 
+    key: Home
+    order: 1
+---
+
+<h1 class="hidden">Walk-A-Wish</h1>
+
+{% include "hero.njk" %}
+
+<section class="features max-width margin-bottom-6">
+
+    {% for feature in collections.features %}
+
+    <div class="features__container">
+
+        <img src="{{ feature.data.img }}" class="features__container__img" alt="">
+
+        <p class="subtitle">
+            {{ feature.data.title }}
+        </p>
+
+        <p class="content-grey">
+            {{ feature.data.text }}
+        </p>
+
+        <a class="btn--pri" href="{{ feature.url }}">
+
+            <span class="btn--front">
+                Learn more
+            </span>
+            
+        </a>
+    
+    </div>
+
+    {% endfor %}
+
+</section>
+
+<section class="testimonials max-width margin-bottom-6">
+
+    <h2>
+        Testimonials
+    </h2>
+
+
+    <div class="quote">
+
+        {% for user in testimonials %}
+            
+            <div class="quote__container">
+
+                <p class="subtitle">
+                    {{ user.quote }}
+                </p>
+
+                <div class="user">
+
+                    <div class="user__picture">
+
+                        <img src="{{ user.picture }}" alt="Picture of writer of testimonial">
+                    
+                    </div>
+
+                    <p class="content-grey">     
+                        {{ user.author }}
+                    </p>
+                
+                </div>
+            
+            </div>
+            
+        {% endfor %}
+
+    </div>
+    
+</section>
+
+<section class="max-width margin-bottom-6">
+
+    <h2>
+        Charities
+    </h2>
+
+    <div class="clients">
+
+        {% for charity in charities %}
+            
+            <div class="clients__container">
+
+                <a href="{{ charity.link }}" target="_blank" class="clients__link">
+
+                    <img src="{{ charity.logo }}" alt="logo {{ charity.name }}" title="{{ charity.name }}">
+
+                </a>
+
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<section class="max-width margin-bottom-6">
+
+    <h2>
+        Blog
+    </h2>
+
+    <ul class="blog__teaser">
+    
+        {% for article in collections.blog %}
+
+            {% if article.data.highlighted %}
+                
+                {% include "_components/blogTeaser.njk" %}
+                
+            {% endif %}
+
+
+        {% endfor %}
+    
+    </ul>
+
+</section>
+
+<section class="max-width margin-bottom-3">
+
+    <h2>
+        Sponsors
+    </h2>
+
+    <div class="clients">
+
+        {% for sponsor in sponsors %}
+            
+            <div class="clients__container">
+
+                <a href="{{ sponsor.link }}" target="_blank" class="clients__link">
+
+                    <img src="{{ sponsor.logo }}" alt="logo {{ sponsor.name }}" title="{{ sponsor.name }}">
+
+                </a>
+
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>

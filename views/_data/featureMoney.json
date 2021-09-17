@@ -1,0 +1,19 @@
+[
+    {
+        "text": "With Walk-A-Wish you can raise money for your favorite charity simply by walking. In the app there is an overview off all the money you have raised and your statistics. The app shows you if you raised more or less than the previous period. You can also set a goal for how much you want to raise and the app remembers how much you already have accomplished.",
+        "img": "../../assets/images/mockups/feature2_1.png",
+        "alt": "screenshot of money raised page"
+    },
+
+    {
+        "text": "While you are walking you can see how much you have already raised for the charity of your choice. At the end of your hike there is an overview where you will find the total amount of money raised during that session.",
+        "img": "../../assets/images/mockups/feature2_2.png",
+        "alt": "screenshot of premium membership page"
+    },
+
+    {
+        "text": "Although Walk-A-Wish is free, there is an option for the die hards to upgrade to an premium membership. With this membership Walk-A-Wish adds € 0.5 for every kilometre you have travelled. For only € 4.99 you can raise your goodwill to a whole other level.",
+        "img": "../../assets/images/mockups/feature2_3.png",
+        "alt": "screenshot of premium membership page"
+    }
+]

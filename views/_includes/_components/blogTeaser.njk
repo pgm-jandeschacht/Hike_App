@@ -1,0 +1,29 @@
+<li class="blog__teaser__container">
+
+    <a href="{{ article.url }}">
+
+        <div class="img">
+        
+            <img src="../assets/images/blogs/{{ article.data.img }}" alt="Teaser image blog post">
+        
+        </div>
+
+        <div class="content">
+
+            <p class="content-grey">
+                {{ article.data.publishedOn }}
+            </p>
+        
+            <p class="subtitle">
+                {{ article.data.subtitle }}
+            </p>
+
+            <p class="content-grey">
+                By {{ article.data.author }}
+            </p>
+        
+        </div>
+        
+    </a>
+
+</li>

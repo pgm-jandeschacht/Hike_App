@@ -1,0 +1,75 @@
+.blog-detail {
+    margin-top: 22rem;
+    display: flex;
+    position: relative;
+
+    .post {
+        width: 65%;
+
+        h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 2.5rem;
+            padding-bottom: $medium-spacing;
+            position: absolute;
+            top: -10.5rem;
+        }
+        
+        h3 {
+            width: 100%;
+            text-align: center;
+            font-weight: $weight-500;
+            position: absolute;
+            top: -6.5rem;
+        }
+
+        p {
+            padding-bottom: $big-spacing;
+            font-size: 1.15rem;
+
+            img {
+                @include border-radius;
+                width: 35%;
+                margin-bottom: $extra-small-spacing;
+    
+                &:nth-of-type(odd) {
+                    margin-right: $big-spacing;
+                    float: left;
+                }
+    
+                &:nth-of-type(even) {
+                    margin-left: $big-spacing;
+                    float: right;
+                }
+            }
+        }
+
+        a {
+            color: $primary-color;
+            font-weight: $weight-500;
+        }
+    }
+
+    .similar {
+        width: 25%;
+        margin-left: 4rem;
+
+        &__teaser {
+            flex-direction: column;
+            margin-top: $extra-small-spacing;
+
+            li {
+                width: 100%;
+                margin-bottom: $big-spacing;
+            }
+        }
+
+        .btn--pri {
+            text-align: center;
+            text-transform: uppercase;
+            display: block;
+        }
+    }
+}
+
+   

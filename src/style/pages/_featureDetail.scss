@@ -1,0 +1,42 @@
+.feature-detail {
+    margin-bottom: 6rem;
+
+    &__block {
+        display: flex;
+        align-items: center;
+
+        &:nth-of-type(even) p {
+            order: 1;
+        }
+
+        &__img {
+            width: 50%;
+            position: relative;
+            height: 30rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__bg {
+                background-color: $primary-color;
+                display: block;
+                width: 25rem;
+                height: 20rem;
+                @include circle;
+                @include box-shadow(4px, 8px);
+            }
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 20rem;
+            }
+        }
+
+        p {
+            width: 50%;
+        }
+    }
+}

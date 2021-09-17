@@ -1,0 +1,32 @@
+---
+layout: base
+title: Blog
+eleventyNavigation: 
+    key: Blog
+    order: 3
+---
+
+<section class="blog margin-bottom-3 max-width">
+
+    <h1 class="margin-bottom-2">
+        Blog
+    </h1>
+
+    <ul class="blog__teaser">
+    
+    
+        {% for article in collections.blog %}
+
+            {% include "_components/blogTeaser.njk" %}
+
+        {% endfor %}
+    
+    </ul>
+
+    <p class="subtitle">
+        Sources:
+    </p>
+
+    <a href="https://charitymiles.org/blog/" target="_blank">https://charitymiles.org/blog/</a>
+
+</section>

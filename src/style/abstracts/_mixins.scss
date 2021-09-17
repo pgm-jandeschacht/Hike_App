@@ -1,0 +1,22 @@
+@mixin border-radius($border-radius: 5px, $overflow: hidden) {
+    border-radius: $border-radius;
+    overflow: $overflow;
+}
+
+@mixin transition($duration: 0.2s) {
+    transition: all $duration ease-in-out;
+}
+
+@mixin circle {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+@mixin hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px $black-16-color;
+}
+
+@mixin box-shadow($y: 2px, $blur: 4px) {
+    box-shadow: 0px $y $blur $black-16-color;
+}

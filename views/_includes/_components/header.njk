@@ -1,0 +1,60 @@
+<header class="margin-bottom-3">
+
+    <nav class="max-width">
+
+        <div>
+
+            <a href="/">
+
+                <img src="/assets/images/logo-white.png" alt="Logo Walk-A-Wish" class="nav__logo logo--medium">
+            
+            </a>
+
+        </div>
+
+        <ul class="nav__list">
+
+            {%- for navPage in collections.all | eleventyNavigation %}
+                
+                <li class="nav__list__item">
+
+                    <a href="{{ navPage.url | url }}"
+
+                        {%- if navPage.url == page.url %}
+                            aria-current="page"
+
+                        {%- endif %}>
+
+                        {{ navPage.key }}
+
+                    </a>
+
+                    {%- if navPage.children | length %}
+                        
+                        <ul class="subnav">
+
+                            {%- for navChildPage in navPage.children %}
+                                
+                                <li class="subnav__item">
+
+                                    <a href="{{ navChildPage.url }}">
+                                        {{ navChildPage.key }}
+                                    </a>
+
+                                </li>
+
+                            {%- endfor %}
+
+                        </ul>
+
+                    {%- endif %}
+
+                </li>
+
+            {%- endfor %}
+
+        </ul>
+
+    </nav>
+
+</header>

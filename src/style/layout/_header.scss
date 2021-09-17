@@ -1,0 +1,84 @@
+header {
+    background-color: $primary-color;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            display: flex;
+        }
+
+        .nav__logo {
+            margin-left: $extra-big-spacing;
+        }
+
+        .nav__list {
+            display: flex;
+            margin-right: $extra-big-spacing;
+
+            &__item {
+                color: $white-60-color;
+                font-weight: $weight-400;
+                font-size: 1.1rem;
+                display: flex;
+                margin: 0 0.5rem;
+                position: relative;
+                @include transition;
+
+                a {
+                    @include transition;
+                    border-bottom: 5px solid $primary-color;
+                    padding-left: $medium-spacing;
+                    padding-right: $medium-spacing;
+                    padding-top: $extra-big-spacing;
+                    padding-bottom: $extra-big-spacing - 0.3125rem;
+
+                    &:hover {
+                        border-color: $secondary-color;
+                        color: $secondary-color;
+                    }
+                }
+
+                .subnav {
+                    position: absolute;
+                    padding: 0;
+                    top: 5.25rem;
+                    left: 0;
+                    display: none;
+                    background-color: $primary-color;
+                    width: 6.3rem;
+                    @include box-shadow(5px, 10px);
+                    border-radius: 0 0 5px 5px;
+                    @include transition(2s);
+
+                    .subnav__item {
+                        display: flex;
+                        
+                        a {
+                            padding: $medium-spacing;
+                            flex-grow: 1;
+                            border: none;
+                            @include transition;
+                        }
+
+                        a:hover {
+                            background-color: $secondary-color;
+                            color: $primary-color;
+                        }
+                    }
+                }
+
+                &:hover .subnav {
+                    display: block;
+                }
+            }            
+        }
+    }
+}

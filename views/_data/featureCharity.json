@@ -1,0 +1,13 @@
+[
+    {
+        "text": "Walk-A-Wish has a bunch of different charities to chose from. With over 100 charities we have definitely something for you. In the app you can see the popular, new and most donated to charities. With this feature we help you find the prefect good cause match.",
+        "img": "../../assets/images/mockups/feature3_1.png",
+        "alt": "screenshot of all charities page"
+    },
+
+    {
+        "text": "When you start a hike, mapped out or not, you will be able to select a good cause. By default this will be set to the last charity you have picked but you can always change this with the click or tap of a button.",
+        "img": "../../assets/images/mockups/feature3_2.png",
+        "alt": "screenshot of start hike page"
+    }
+]

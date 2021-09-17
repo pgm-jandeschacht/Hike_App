@@ -1,0 +1,61 @@
+[
+    {
+        "logo": "./assets/images/charities/char01.png",
+        "link": "https://www.rmhc.org/",
+        "name": "Ronald McDonald House Programs"
+    },
+
+    {
+        "logo": "./assets/images/charities/char02.png",
+        "link": "https://www.unicef.org/",
+        "name": "UNICEF"
+    },
+
+    {
+        "logo": "./assets/images/charities/char03.png",
+        "link": "https://www.vitaminangels.org/",
+        "name": "Vitamin Angels"
+    },
+
+    {
+        "logo": "./assets/images/charities/char04.jpg",
+        "link": "https://www.worldwildlife.org/",
+        "name": "World Wildlife Fund"
+    },
+
+    {
+        "logo": "./assets/images/charities/char05.png",
+        "link": "https://www.4ocean.com/",
+        "name": "4Ocean"
+    },
+
+    {
+        "logo": "./assets/images/charities/char06.png",
+        "link": "https://www.icrc.org/en",
+        "name": "International Committee of the Red Cross"
+    },
+
+    {
+        "logo": "./assets/images/charities/char07.jpg",
+        "link": "https://www.directrelief.org/",
+        "name": "Direct Relief"
+    },
+
+    {
+        "logo": "./assets/images/charities/char08.png",
+        "link": "https://www.doctorswithoutborders.org/",
+        "name": "Doctors Without Borders"
+    },
+
+    {
+        "logo": "./assets/images/charities/char09.png",
+        "link": "https://www.greenpeace.org/international/",
+        "name": "Greenpeace"
+    },
+
+    {
+        "logo": "./assets/images/charities/char10.png",
+        "link": "https://www.peta.org",
+        "name": "Peta"
+    }
+]

@@ -1,0 +1,31 @@
+---
+layout: feature
+tags: features
+title: Charity of your choice
+text: Pick a charity of your choice out of more than 100 charities.
+img: ./assets/images/charity.svg
+eleventyNavigation:
+  key: Charity
+  order: 3
+  parent: Features
+---
+
+{% for feature in featureCharity %}
+
+    <div class="feature-detail__block">
+
+        <p>
+            {{ feature.text }}
+        </p>
+
+        <div class="feature-detail__block__img">
+
+            <span class="feature-detail__block__img__bg"></span>
+
+            <img src="{{ feature.img }}" alt="{{ feature.alt }}">
+            
+        </div>
+
+    </div>
+    
+{% endfor %}

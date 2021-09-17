@@ -1,0 +1,25 @@
+<section class="hero max-width margin-bottom-6">
+
+    <div class="hero__img">
+        
+        <img src="./assets/images/hero-background.jpg" alt="Man standing on the ledge of a rock">
+
+        <img src="./assets/images/mockups/home01.png" class="mockup" alt="Mockup of the home page of the app">
+
+    </div>
+
+    <div class="hero__text">
+        <h2>
+            What you might like
+        </h2>
+
+        {% for intro in intro %}
+            
+            <p class="subtitle">{{ intro.title }}</p>
+
+            <p class="content-grey">{{ intro.content }}</p>
+
+        {% endfor %}
+    </div>
+
+</section>

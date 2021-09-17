@@ -1,0 +1,42 @@
+---
+layout: base
+---
+
+<section class="blog-detail max-width margin-bottom-3">
+
+    <div class="post">
+        
+        {{ content | safe }}
+
+    </div>
+
+    <div class="similar">
+
+        <p class="subtitle">
+            Similar posts
+        </p>
+    
+        <ul class="blog__teaser similar__teaser">
+
+            {% for article in collections.blog %}
+
+                {% if page.url != article.url %}
+                    
+                    {% include "_components/recommend.njk" %}
+
+                {% endif %}
+
+
+            {% endfor %}
+        
+        </ul>
+
+        <a href="/blog" class="btn--pri">
+            <span class="btn--front">
+                See all posts
+            </span>
+        </a>
+
+    </div>
+
+</section>

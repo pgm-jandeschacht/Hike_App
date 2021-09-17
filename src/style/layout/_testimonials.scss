@@ -1,0 +1,50 @@
+.testimonials {
+
+    .quote {
+        display: flex;
+        justify-content: space-between;
+
+        &__container {
+            width: 28%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+
+            p {
+                line-height: 1.35;
+                font-weight: $weight-500;
+                font-style: italic;
+            }
+
+            .subtitle::before,
+            .subtitle::after {
+                content: '"';
+            }
+
+            .user {
+                display: flex;
+                align-items: center;
+                padding-top: $medium-spacing;
+        
+                p {
+                    padding-bottom: 0;
+                }
+        
+                &__picture {
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: stretch;
+                    margin-right: $medium-spacing;
+                    @include circle;
+        
+                    img {
+                        object-fit: cover;
+                        width: 15rem;
+                    }
+                }
+            }
+        }
+    }
+}

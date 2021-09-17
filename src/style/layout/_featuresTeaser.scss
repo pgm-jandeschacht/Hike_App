@@ -1,0 +1,28 @@
+.features {
+    display: flex;
+    justify-content: space-between;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+        width: 28%;
+
+        img {
+            width: 6rem;
+            height: 6rem;
+            margin-bottom: $extra-big-spacing;
+            width: 100%;
+        }
+
+        a, p {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        a {
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+[
+    {
+        "author": "Jennifer Lecorchick",
+        "quote": "You are going to hike anyway. Why not give back by walking with Walk-A-Wish? It's a no-brainer!",
+        "picture": "./assets/images/jennifer-lecorchick.jpg"
+    },
+
+    {
+        "author": "Grove Ayers",
+        "quote": "Using Walk-A-Wish every day reminds me of how much a group of like-minded individuals can accomplish.",
+        "picture": "./assets/images/grove-ayers.jpg"
+    },
+    
+    {
+        "author": "Deb Evans",
+        "quote": "Using the Walk-A-Wish app has become a healthy addiction. My day is not complete unless I walk at least 1 mile for Walk-A-Wish.",
+        "picture":"./assets/images/deb-evans.jpg"
+    }
+]

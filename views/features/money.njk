@@ -1,0 +1,31 @@
+---
+layout: feature
+tags: features
+title: Raise money
+text: Raise money for your favorite charities whilest taking a hike through your neighborhood.
+img: ./assets/images/euro.svg
+eleventyNavigation:
+  key: Money
+  order: 1
+  parent: Features
+---
+
+{% for feature in featureMoney %}
+
+    <div class="feature-detail__block">
+
+        <p>
+            {{ feature.text }}
+        </p>
+
+        <div class="feature-detail__block__img">
+
+            <span class="feature-detail__block__img__bg"></span>
+
+            <img src="{{ feature.img }}" alt="{{ feature.alt }}">
+            
+        </div>
+
+    </div>
+    
+{% endfor %}

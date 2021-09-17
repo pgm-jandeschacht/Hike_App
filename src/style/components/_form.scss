@@ -1,0 +1,47 @@
+label {
+    display: block;
+    padding-bottom: $small-spacing;
+    font-weight: $weight-500;
+}
+
+input,
+textarea {
+    padding: $small-spacing $big-spacing;
+    margin-right: $extra-small-spacing;
+    @include border-radius(5px);
+    font-size: 1.1rem;
+    border: none;
+    margin-bottom: $big-spacing;
+    width: calc(100% - 3rem);
+    @include transition;
+
+    &:focus {
+        @include hover;
+        outline-color: $primary-color;
+    }
+}
+
+::placeholder {
+    color: $grey-color;
+}
+
+.form__flex {
+    display: flex;
+
+    div {
+        width: 50%;
+
+        &:first-of-type {
+            margin-right: $big-spacing;
+        }
+    }
+}
+
+.input--alt {
+    padding: $small-spacing $big-spacing;
+    margin-right: $extra-small-spacing;
+    @include border-radius(5px);
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    width: auto;
+}

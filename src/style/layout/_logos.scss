@@ -1,0 +1,38 @@
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        @include circle;
+        background-color: $white-color;
+        margin-bottom: $extra-big-spacing;
+        width: 18%;
+        height: 0;
+        padding-top: 18%;
+        position: relative;
+        @include transition;
+
+        &:hover {
+            @include hover;
+        }
+
+        .clients__link {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            padding: 3rem;
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}

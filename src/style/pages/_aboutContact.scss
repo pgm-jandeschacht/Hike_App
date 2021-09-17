@@ -1,0 +1,24 @@
+.info {
+    display: flex;
+
+    &__img {
+        width: 50%;
+    }
+
+    &__content {
+        width: 50%;
+
+        p {
+            padding-bottom: $small-spacing;
+
+            a {
+                color: $primary-color;
+                font-weight: $weight-500;
+            }
+
+            &.padding-top {
+                padding-top: $big-spacing;
+            }
+        }
+    }
+}

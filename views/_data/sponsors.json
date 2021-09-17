@@ -1,0 +1,61 @@
+[
+    {
+        "logo": "./assets/images/sponsors/spon01.svg",
+        "link": "https://www.fitbit.com/global/us/home",
+        "name": "Fitbit"
+    },
+
+    {
+        "logo": "./assets/images/sponsors/spon02.svg",
+        "link": "https://www.polar.com/en",
+        "name": "Polar"
+    },
+
+    {
+        "logo": "./assets/images/sponsors/spon03.png",
+        "link": "https://www.garmin.com/en-US/",
+        "name": "Garmin"
+    },
+
+    {
+        "logo": "./assets/images/sponsors/spon04.png",
+        "link": "https://www.nike.com/",
+        "name": "Nike"
+    },
+
+    {
+        "logo": "./assets/images/sponsors/spon05.png",
+        "link": "https://www.adidas.com/us",
+        "name": "Adidas"
+    },
+
+    {
+        "logo": "./assets/images/sponsors/spon06.png",
+        "link": "https://www.k-way.com/en",
+        "name": "K-Way"
+    },
+
+    {
+        "logo": "./assets/images/sponsors/spon07.svg",
+        "link": "https://www.ray-ban.com/usa",
+        "name": "Ray-Ban"
+    },
+
+    {
+        "logo": "./assets/images/sponsors/spon08.png",
+        "link": "https://www.thenorthface.com/homepage.html",
+        "name": "The North Face"
+    },
+
+    {
+        "logo": "./assets/images/sponsors/spon09.svg",
+        "link": "https://www.jack-wolfskin.com/",
+        "name": "Jack Wolkskin"
+    },
+
+    {
+        "logo": "./assets/images/sponsors/spon10.png",
+        "link": "https://www.columbia.com/",
+        "name": "Columbia"
+    }
+]

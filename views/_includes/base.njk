@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon/favicon-32x32.png">
+</head>
+<body>
+
+    <a href="#maincontent" class="skip">Skip to main content</a>
+
+    {% include "_components/header.njk" %}
+
+    <main id="maincontent">
+    
+        {{content | safe}}
+
+    </main>
+
+    {% include "_components/footer.njk" %}
+    
+</body>
+</html>

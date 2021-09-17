@@ -1,0 +1,19 @@
+[
+    {
+        "text": "With Walk-A-Wish you can chose to make your own route or you can chose one the many mapped out routes. These routes will let you discover cities and landscapes like never before. They are categorized in three levels, easy, mediocre and hard. So no mather what your fitness leven is, on Walk-A-Wish we have the hike for you.",
+        "img": "../../assets/images/mockups/feature1_1.png",
+        "alt": "screenshot of hike detail page"
+    },
+
+    {
+        "text": "Before you start your hike you will see an overview of the route. This way you can plan ahead and you have an idea of where you are going. The duration, distance and elevation is also displayed for your comfort. Before you start walking you have the possibility to change the charity or change some other settings.",
+        "img": "../../assets/images/mockups/feature1_2.png",
+        "alt": "screenshot of completed hike page"
+    },
+
+    {
+        "text": "When you are finished you will see an overview of your hike. The distance, duration, how much money was raised and who it was in favor of are displayed.",
+        "img": "../../assets/images/mockups/feature1_3.png",
+        "alt": "screenshot of start hike page"
+    }
+]

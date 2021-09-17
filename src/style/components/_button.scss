@@ -1,0 +1,61 @@
+// primary button
+.btn--pri {
+    background: #01197a;
+    @include border-radius(12px, visible);
+    padding: 0;
+    outline-offset: 4px;
+    outline: none;
+}
+  
+.btn--front {
+    display: block;
+    cursor: pointer;
+    padding: $small-spacing 2.625rem;
+    @include border-radius(12px, visible);
+    font-weight: $weight-500;
+    color: $secondary-color;
+    background: $primary-color;
+    transform: translateY(-4px);
+    will-change: transform;
+    @include transition;
+}
+
+.btn--pri:hover .btn--front {
+    transform: translateY(-6px);
+    background: #002de2;
+}
+
+.btn--pri:active .btn--front {
+    transform: translateY(-2px);
+}
+
+// secondary button
+.btn--sec {
+    background: $grey-color;
+    @include border-radius(12px, visible);
+    padding: 0;
+    outline-offset: 4px;
+    outline: none;
+}
+  
+.btn--front--sec {
+    display: block;
+    cursor: pointer;
+    padding: $small-spacing 2.625rem;
+    @include border-radius(12px, visible);
+    font-weight: $weight-500;
+    color: $primary-color;
+    background: $secondary-color;
+    transform: translateY(-4px);
+    will-change: transform;
+    @include transition;
+}
+
+.btn--sec:hover .btn--front--sec {
+    transform: translateY(-6px);
+    background: $white-color;
+}
+
+.btn--sec:active .btn--front--sec {
+    transform: translateY(-2px);
+}

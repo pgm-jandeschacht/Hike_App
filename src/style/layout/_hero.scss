@@ -1,0 +1,39 @@
+.hero {
+    display: flex;
+    @include border-radius;
+    width: calc(100% + 4rem);
+    transform: translateX(-$extra-big-spacing);
+    
+    &__img {
+        width: 70%;
+        display: flex;
+        @include border-radius;
+        position: relative;
+
+        img {
+            object-fit: cover;
+        }
+
+        .mockup {
+            position: absolute;
+            width: 20rem;
+            top: 6%;
+            left: 68%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__text {
+        padding: $extra-big-spacing 3rem;
+
+        &__content:last-of-type{
+            padding-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 85rem) {
+    .hero {
+        transform: translateX(0);
+    }
+}
